@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="css/bootswatch.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -99,10 +100,27 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="bs-component">
-              <div class="jumbotron">
+              <div class="jumbotron splash dimmable">
                 <h1>GunnHacks</h1>
                 <p>It's coming to Palo Alto this spring. Get ready.</p>
-                <p><a class="btn btn-primary btn-lg" disabled>Registration Coming Soon!</a></p>
+                <div class="ui dimmer transition hidden" style="display: none;">
+                  <div class="content">
+                    <div class="center">
+                      <h2 class="ui inverted icon header">
+                        Thanks, we'll email you when registration opens :)
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="action">
+                  <div class="ui input">
+                    <input class="form-control" id="email" type="email" autocomplete="off" placeholder="Enter your Email" required>
+                  </div>
+                  <button type="submit" id="submit" class="btn btn-default">
+                    Submit
+                  </button>
+                  <input type="hidden" name="_next">
+                </div>
               </div>
             </div>
           </div>
@@ -157,7 +175,7 @@
           <div class="col-lg-4">
             <div class="bs-component">
               <h1>Who can attend?</h1>
-              <p>All high school students from any high school are eligible. We are also welcoming aspiring middle school students on a limited basis?</p>
+              <p>All high school students from any high school are eligible. We may also welcome aspiring middle school students on a limited basis.</p>
             </div>
           </div>
         </div>
@@ -222,8 +240,10 @@
     </body>
 
     <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/form.js"></script>
 
     <!-- Google Analytics -->
   

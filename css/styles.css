@@ -185,3 +185,16 @@ section {
 .red {
 	color: #d95c5c;
 }
+
+.action {
+  margin: 16px auto; }
+.action input {
+    display: inline-block;
+    background: white;
+    border: 1px solid #007ae6; }
+.action .input {
+    margin-bottom: 8px; }
+.action .button {
+    display: inline-block;
+    background: #f1e820 !important;
+    margin-left: 4px; }
