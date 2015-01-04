@@ -186,15 +186,76 @@ section {
 	color: #d95c5c;
 }
 
-.action {
-  margin: 16px auto; }
-.action input {
-    display: inline-block;
-    background: white;
-    border: 1px solid #007ae6; }
-.action .input {
-    margin-bottom: 8px; }
-.action .button {
-    display: inline-block;
-    background: #f1e820 !important;
-    margin-left: 4px; }
+/* Contact form */
+
+.contact-form input[type="email"] ,.contact-form input[type="submit"] {
+	font-family:"Chaparral Pro",'Serif';
+	display:inline-block;
+	font-size:1.2em;
+	padding:0.8em;
+	outline:none;
+	border:none;
+	margin:0px;
+}
+
+.contact-form input[type="email"] {
+	-webkit-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	border:1px solid rgba(255, 255, 255, 0.8);
+	border-radius:3px 0px 0px 3px;
+	color:#5e6272;
+	width:72%;
+}
+
+.contact-form input[type="submit"] {
+	-webkit-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	border:1px solid rgba(255, 255, 255, 0.8);
+	background-color:transparent;
+	border-radius:0 3px 3px 0;
+	cursor:pointer;
+	color:white;
+	width:28%;
+}
+
+.button {
+	-webkit-transition:all 0.1s ease-in-out;
+	transition:all 0.1s ease-in-out;
+	font-weight:normal;
+	display:inline-block;
+	border:1px solid #ffffff;
+	text-decoration:none;
+	border-radius:3px;
+	padding:12px 0.75em;
+	color:white;
+}
+
+.button:hover {
+	border:1px solid #fd6e6e;
+	background:#fd6e6e;
+}
+
+.button.nohover {
+	border:1px solid white;
+	background:transparent;
+}
+
+.button+.button {
+	margin-left:12px;
+}
+
+.valid input[type="submit"] {
+	background-color:#2ecc71;
+}
+
+.contact-form #signup.sent input[type="email"] {
+	width:0%;
+	padding:0.8em 0;
+	border:none;
+}
+
+.contact-form #signup.sent input[type="submit"] {
+	border-radius:3px;
+	cursor:auto;
+	width:40%;
+}
