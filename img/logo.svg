@@ -74,6 +74,8 @@
       <path id="_48730488" class="fil3 str2" d="M3.064 1.93161l4.52957 0c0.623738,0 1.13239,0.508653 1.13239,1.13239l0 4.52957c0,0.623738 -0.508653,1.13239 -1.13239,1.13239l-4.52957 0c-0.623738,0 -1.13239,-0.508653 -1.13239,-1.13239l0 -4.52957c0,-0.623738 0.508653,-1.13239 1.13239,-1.13239z"/>
     </g>
   </g>
-  <text x="50%" y="67.5%" text-anchor="middle" fill="#DB214C" font-family="CMUSerif-Bold" font-size="7">λ</text>
-  <text x="50%" y="77.5%" text-anchor="middle" fill="#DB214C" font-family="CMUSerif-Bold" font-size="1">GunnHacks</text>
+  <text x="50%" y="47.5%" text-anchor="middle" fill="#DB214C" font-family="CMUSerif-Bold" font-size="4">λ</text>
+  <text x="50%" y="62.5%" fill="#4D4948" font-family="CMUSerif-Bold" font-size="2">
+    <tspan x="50%" text-anchor="middle">Gunn</tspan><tspan x="50%" dy="1.5" text-anchor="middle">Hacks</tspan>
+  </text>
 </svg>
