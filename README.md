@@ -1,5 +1,5 @@
-gunnhacks
+GunnHacks
 =========
-Website for Gunn's inaugural hackaton.
+Website for Gunn's inaugural hackathon.
 
-Check it out at [http://www.gunnhacks.com].
+Check it out at (http://www.gunnhacks.com).

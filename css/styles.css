@@ -1,16 +1,43 @@
+@import url("//fonts.googleapis.com/css?family=Lato:400,700,400italic");
+
 @font-face {
 	font-family: Bebas_Neue;
 	src: url('../fonts/bebas_neue/BebasNeue.otf');
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #2f2f2f;
+}
+
+h1, .h1 {
+	font-size: 63px;
 }
 
 section {
 	width: 100%;
 	overflow: auto;
+}
+
+.navbar {
+	background-color: #be0b20;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default a:hover,
+.navbar-default a:focus {
+  color: #1576b3 !important;
+}
+
+.navbar img {
+	height: 100%;
+	width: auto;
+	float: left;
 }
 
 #header {
@@ -99,6 +126,13 @@ section {
 	font-weight: 300;
 }
 
+/* from Cal Hacks legacy code
+
+#faq {
+	padding: 20px 0px;
+	background-color: rgb(89, 140, 190);
+	overflow: hidden;
+} */
 
 .faqBlock {
 	position: relative;
@@ -152,12 +186,6 @@ section {
 	transform: rotateY(0);
 }
 
-#faq {
-	padding: 20px 0px;
-	background-color: rgb(89, 140, 190);
-	overflow: hidden;
-}
-
 .faqBlock .question {
 	color: white;
 	background-color: rgb(89, 140, 190);
@@ -189,7 +217,6 @@ section {
 /* Contact form */
 
 .contact-form input[type="email"] ,.contact-form input[type="submit"] {
-	font-family:"Chaparral Pro",'Serif';
 	display:inline-block;
 	font-size:1.2em;
 	padding:0.8em;

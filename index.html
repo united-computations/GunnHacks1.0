@@ -10,24 +10,23 @@
 
 <!doctype html>
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
     <title>GunnHacks | March 14-15, 2015</title>
-    <link rel="icon" type="image/png" href="~~~~~~~~~~~~~~~~~~~~" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="generator" content="GunnHacks" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="author" href="humans.txt" />
+    <meta name="generator" content="GunnHacks" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
     <!-- Google -->
     <meta name="description" content="GunnHacks" />
-    <meta name="keywords" content="GunnHacks, Henry M. Gunn High School, Gunn, student, hackathon, Palo Alto, Bay Area" />
-    <meta name="author" content="GunnHacks" />
+    <!-- <meta name="keywords" content="GunnHacks, Henry M. Gunn High School, Gunn, student, hackathon, Palo Alto, Bay Area" /> -->
     <meta name="copyright" content="GunnHacks" />
 
     <!-- Facebook -->
     <meta property="og:title" content="Justin Yang" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" />
+    <meta property="og:image" content="img/logo.png" />
     <meta property="og:url" content="http://www.gunnhacks.com" />
     <meta property="og:description" content="GunnHacks | March 14-15, 2015" />
 
@@ -35,12 +34,10 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="GunnHacks" />
     <meta name="twitter:description" content="GunnHacks | March 14-15, 2015" />
-    <meta name="twitter:image" content="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" />
+    <meta name="twitter:image" content="img/logo.png" />
 
     <!-- Twitter Bootstrap -->
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="css/bootswatch.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -50,11 +47,13 @@
       <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body gram_dict="true">
+  <body>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">GunnHacks</a>
+          <a href="#" class="navbar-brand">
+            <img src="img/logo.png" alt="GunnHacks">&nbsp;GunnHacks
+          </a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -64,34 +63,25 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#faq">FAQ</a>
-            </li>
-            <li>
-              <a href="#sponsors">Sponsors</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
           </ul>
-
-<!--           <ul class="nav navbar-nav navbar-right">
-          </ul> -->
-
+          <!-- <ul class="nav navbar-nav navbar-right"></ul> -->
         </div>
       </div>
     </div>
 
 
-    <div class="container" id="header">
+    <div class="container" id="container">
 
       <!-- Containers
       ================================================== -->
-      <div class="bs-docs-section" id="about">
+      <div id="about">
 
         <div class="row">
           <div class="col-lg-12">
-            <div class="bs-component">
+            <div>
               <div class="jumbotron">
                 <h1>GunnHacks</h1>
                 <p>March 14-15, 2015</p>
@@ -104,96 +94,92 @@
             </div>
           </div>
         </div>
+      </div>
 
       <!-- FAQ
       ================================================== -->
-      <div class="bs-docs-section">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-header">
-              <h1 id="type">FAQ</h1>
-            </div>
-          </div>
-        </div>
+      <div class="page-header">
+        <h1 id="faq">FAQ</h1>
+      </div>
 
-        <!-- Headings -->
+      <!-- Headings -->
 
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>What is a hackathon?</h1>
-              <p><a href="//medium.com/@alexkern/what-is-a-hackathon-c2162b893b0a">Hackathons are where your crazy idea becomes reality.</a> Students work in teams for 24 hours to create something amazing. Build anything&mdash;there are no restrictions on what you can create. Dive in and make the most incredible thing you can alongside fellow creators. While some may see hackers as the crazy ones, we see genius.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>Who can attend?</h1>
-              <p>All high school students from any high school are eligible. We may also welcome aspiring middle school students on a limited basis.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>What if I don't know how to code?</h1>
-              <p>All students regardless of coding ability are welcome. Hackathons are a great place to learn, so come and build your first app or website! We'll also have workshops for you to learn something new.</p>
-            </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div>
+            <h2>What is a hackathon?</h2>
+            <p><a href="//medium.com/@alexkern/what-is-a-hackathon-c2162b893b0a">Hackathons are where your crazy idea becomes reality.</a> Students work in teams for 24 hours to create something amazing. Build anything&mdash;there are no restrictions on what you can create. Dive in and make the most incredible thing you can alongside fellow creators. While some may see hackers as the crazy ones, we see genius.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>What if I don't have a team or an idea?</h1>
-              <p>No problem! Many hackers do not have a fully-formed team or hack concept before the event begins. We will be hosting team-forming activities after hacking begins to help you find the perfect match. If you’re a first-time hacker, there will be many others looking for team members with whom you can pair.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>What can I build?</h1>
-              <p>Web, mobile, hardware, you name it. Any type of project is welcome. Projects will be judged based on creativity, technical difficulty, polish, and utility by a panel of industry judges.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>How big should teams be? Can I hack alone?</h1>
-              <p>We highly encourage you to build with a team. Teamwork is deeply rooted in the hacking ethos, and you'll have a better time building with your brightest peers. Teams should be at most five people.</p>
-            </div>
+        <div class="col-lg-4">
+          <div>
+            <h2>Who can attend?</h2>
+            <p>All high school students from any high school are eligible. We may also welcome aspiring middle school students on a limited basis.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>How much does it cost?</h1>
-              <p>Cal Hacks is free for all accepted hackers. We will provide your WiFi, meals, swag, and workspace for the entire weekend.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>What should I bring?</h1>
-              <p>All attendees are required to bring their valid student ID (or equivalent school ID) for admission. Bring laptops, phones, chargers, and any other tech you need for the weekend. Sleeping bags, and toiletries are highly recommended.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>How do I register?</h1>
-              <p>Registration will be up soon here. In the meantime, sign up above to be emailed when registrations open.</p>
-            </div>
+        <div class="col-lg-4">
+          <div>
+            <h2>What if I don't know how to code?</h2>
+            <p>All students regardless of coding ability are welcome. Hackathons are a great place to learn, so come and build your first app or website! We'll also have workshops for you to learn something new.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="bs-component">
-              <h1>What if I have another question?</h1>
-              <p>Please feel free to reach out to us at <a href="mailto:info@gunnhacks.com">info@gunnhacks.com</a>.</p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div>
+            <h2>What if I don't have a team or an idea?</h2>
+            <p>No problem! Many hackers do not have a fully-formed team or hack concept before the event begins. We will be hosting team-forming activities after hacking begins to help you find the perfect match. If you’re a first-time hacker, there will be many others looking for team members with whom you can pair.</p>
           </div>
         </div>
+        <div class="col-lg-4">
+          <div>
+            <h2>What can I build?</h2>
+            <p>Web, mobile, hardware, you name it. Any type of project is welcome. Projects will be judged based on creativity, technical difficulty, polish, and utility by a panel of industry judges.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <h2>How big should teams be? Can I hack alone?</h2>
+            <p>We highly encourage you to build with a team. Teamwork is deeply rooted in the hacking ethos, and you'll have a better time building with your brightest peers. Teams should be at most five people.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div>
+            <h2>How much does it cost?</h2>
+            <p>GunnHacks is free for all accepted hackers. We will provide your WiFi, meals, swag, and workspace for the entire weekend.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <h2>What should I bring?</h2>
+            <p>All attendees are required to bring their valid student ID (or equivalent school ID) for admission. Bring laptops, phones, chargers, and any other tech you need for the weekend. Sleeping bags, and toiletries are highly recommended.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <h2>How do I register?</h2>
+            <p>Registration will be up soon here. In the meantime, sign up above to be emailed when registrations open.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div>
+            <h2>What if I have another question?</h2>
+            <p>Please feel free to reach out to us at <a href="mailto:info@gunnhacks.com">info@gunnhacks.com</a>.</p>
+          </div>
+        </div>
+      </div>
 
       <!-- Sponsors
       ================================================== -->
-      <div class="bs-docs-section" id="sponsors">
+      <div id="sponsors">
 
         <div class="row">
           <div class="col-lg-12">
-            <div class="bs-component">
+            <div>
               <div class="jumbotron">
                 <h1>Sponsors</h1>
                 <p>Interested in sponsoring? Contact us at <a href="mailto:sponsor@gunnhacks.com">sponsor@gunnhacks.com</a> and check out our <a href="sponsor.pdf">sponsorship packet</a>.</p>
@@ -210,7 +196,8 @@
           </div>
         </div>
       </footer>
-    </body>
+    </div>
+  </body>
 
     <!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
