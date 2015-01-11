@@ -79,18 +79,18 @@
 			</div>
 		</div>
 
-		<div id="about">
+		<div id="about" itemscope itemtype="http://schema.org/EducationEvent">
 			<div id="about-content" class="container">
 				<div>
 					<div id="about-img">
-						<img src="img/logo.svg" alt="GunnHacks">
+						<img itemprop="image" src="img/logo.svg" alt="GunnHacks">
 					</div>
 					<div id="title">
 						<h1>
-							GunnHacks
+							<span itemprop="name">GunnHacks</span>
 							<br>
 							<small>
-								March 14&ndash;15, 2015
+								<time itemprop="startDate" datetime="2015-03-14T14:00">March 14</time>&ndash;15, 2015
 								<br>
 								2 pm&ndash; 2 pm
 							</small>
@@ -103,6 +103,25 @@
 					</div>
 				</div>
 			</div>
+
+			<span itemprop="location" itemscope itemtype="http://schema.org/Place">
+				<meta itemprop="name" content="Gunn High School">
+				<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<meta itemprop="streetAddress" content="780 Arastradero Rd">
+					<meta itemprop="addressLocality" content="Palo Alto">
+					<meta itemprop="addressRegion" content="CA">
+					<meta itemprop="addressCountry" content="United States">
+					<meta itemprop="postalCode" content="94306">
+				</span>
+			</span>
+			<meta itemprop="duration" content="PT24:00">
+			<meta itemprop="url" content="http://gunnhacks.com">
+			<meta itemprop="description" content="Make, Build, Create &amp; Learn. Join us from March 14&ndash;15 for Gunn's inaugural 24&#8209;hour high school hackathon.">
+			<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<span itemprop="description">Free</span>
+				<meta itemprop="price" content="0" />
+				<meta itemprop="priceCurrency" content="USD" />
+			</span>
 		</div>
 
 		<!-- FAQ
