@@ -1,11 +1,3 @@
-$(document).ready(function(){
-	setContainerWidth();
-
-	var colors = ["#385c78", "#be0b20", "#7caf14", "#ccb40a", "#2f2f2f"],
-	selectedColor = colors[Math.floor(Math.random()*colors.length)]
-	$("div#faq").css("background-color", selectedColor);
-});
-
 $(window).resize(function() {
 	setContainerWidth();
 });
@@ -23,3 +15,10 @@ function setContainerWidth() {
 	var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
 	$('#faq-container').width(maxBoxPerRow * blockWidth);
 }
+
+$(document).ready(function() {
+	$.material.init();
+	$('.tooltip').tooltipster({
+		position: 'bottom'
+	});
+});
