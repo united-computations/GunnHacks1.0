@@ -18,6 +18,7 @@ function setContainerWidth() {
 
 $(document).ready(function() {
 	$.material.init();
+	smoothScroll.init();
 	$('.tooltip').tooltipster({
 		position: 'bottom'
 	});
