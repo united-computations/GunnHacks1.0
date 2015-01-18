@@ -22,6 +22,40 @@ a, a:hover, a:active, a:focus {
 	position: inherit;
 }
 
+/* ---------- Sticky Footer ---------- */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.content {
+	margin-top: 50px;
+	/*padding-top: 10px;*/
+	padding-bottom: 107px;
+	/*padding-left: 15px;*/
+	/*padding-right: 15px;*/
+}
+
+@media (min-width: 1200px) {
+	#content {
+		margin-top: 60px;
+	}
+}
+
+footer {
+	bottom: 0;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* ---------- Navbar ---------- */
 
 .navbar img {
@@ -35,9 +69,25 @@ a, a:hover, a:active, a:focus {
 	float: left;
 }
 
+.navbar-collapse {
+	border: none;
+}
+
 @media (min-width: 768px) {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: 15px;
+	}
+}
+
+@media (max-width: 206px) {
+	.navbar-brand {
+		font-size: 8vw;
+	}
+}
+
+@media (max-width: 186px) {
+	.navbar-brand {
+		font-size: 6vw;
 	}
 }
 
@@ -54,11 +104,19 @@ a, a:hover, a:active, a:focus {
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: right;
-	height: 100vh;
+	height: 95vh;
 	min-height: 580px;
 }
 
+@media (max-height: 540px) and (max-width: 320px) {
+	#about {
+		height: 50vh;
+		min-height: 480px;
+	}
+}
+
 #about > #about-content {
+	position: relative;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -67,15 +125,12 @@ a, a:hover, a:active, a:focus {
 
 #about-content {
 	font-size: 30px;
-	position: relative;
+	/*position: relative;*/
 	top: 50%;
-	padding-top: 60px;
 	width: 80%;
 	max-width: 650px;
 	margin: 0 auto;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #about #about-content small {
@@ -85,6 +140,21 @@ a, a:hover, a:active, a:focus {
 @media (max-width:480px) {
 	#about-content small {
 		font-size: 8vw;
+	}
+}
+
+@media (max-width: 425px) {
+	.contact-form {
+		font-size: 7vw;
+	}
+}
+
+@media (max-width: 380px) {
+	#title > h1 {
+		font-size: 14vw;
+	}
+	.contact-form {
+		font-size: 6vw;
 	}
 }
 
@@ -327,21 +397,25 @@ a, a:hover, a:active, a:focus {
 /* ---------- Footer ---------- */
 
 footer {
+	height: 57px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
 
 footer > div {
-	position: relative;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 .copyright {
 	margin-bottom: 0;
 	padding-bottom: 10px;
-	top: 50%;
+/*	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	transform: translateY(-50%);*/
+	position: relative;
+	top: 21px; /* temporary? */
 }
 
 .social {
@@ -367,4 +441,10 @@ footer > div {
 	background-position: center center;
 	opacity: .8;
 	vertical-align: text-top;
+}
+
+@media (max-width: 477px) {
+	.copyright {
+		font-size: 2vw;
+	}
 }
