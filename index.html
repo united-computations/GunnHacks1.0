@@ -49,12 +49,13 @@
 		<!-- Twitter Bootstrap and CSS -->
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
 		<link href="css/ripples.min.css" rel="stylesheet">
 		<link href="css/material.min.css" rel="stylesheet">
 		<link href="css/tooltipster.css" rel="stylesheet">
-		<!-- <link href="css/component.css" rel="stylesheet"> -->
-		<!-- <link href="css/animations.css" rel="stylesheet"> -->
-		<link href="css/sweet-alert.css"rel="stylesheet">
+		<link href="css/component.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet">
+		<!-- <link href="css/sweet-alert.css"rel="stylesheet"> -->
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -72,7 +73,7 @@
 						</a>
 					</div>
 					<div class="navbar-collapse collapse" id="navbar-main">
-						<ul class="nav navbar-nav">
+						<ul class="nav navbar-nav pt-page-current">
 							<li class="dropdown">
 							<li><a data-scroll href="#about">About</a></li>
 							<li><a data-scroll href="#faq">FAQ</a></li>
@@ -90,7 +91,6 @@
 								<div id="about-img">
 									<img itemprop="image" src="img/logo.svg" alt="GunnHacks">
 								</div>
-								<!-- <li data-animation="13"><a href="#">Press me</a></li> -->
 								<div id="title">
 									<h1>
 										<span itemprop="name">GunnHacks</span>
@@ -104,7 +104,8 @@
 								</div>
 								<div class="contact-form">
 									<form id="signup">
-										<input type="email" placeholder="Get notified to register..." class="email" style="cursor: auto;"><input type="submit" data-animation="13" value="Submit">
+										<!-- Change to `Register Now!` when registration opens -->
+										<input type="email" placeholder="Get notified to register..." class="email" autofocus><input type="submit" value="Submit">
 									</form>
 								</div>
 							</div>
@@ -300,7 +301,7 @@
 												We're finalizing our sponsor list soon! Check out our sponsorship packages below, or shoot us an email at <a href="mailto:sponsor@gunnhacks.com">sponsor@gunnhacks.com</a> to see how you you can get involved.
 											</div>
 											<div id="sponsor-link">
-												<a href="sponsor.pdf" class="btn btn-info btn-raised">Sponsor GunnHacks</a>
+												<a href="sponsor.pdf" class="btn btn-danger btn-raised">Sponsor GunnHacks</a>
 											</div>
 										</div>
 									</div>
@@ -311,6 +312,255 @@
 				</div>
 
 				<div class="pt-page pt-page-2">
+					<div class="container well">
+						<form class="form-horizontal" id="registration">
+							<fieldset>
+								<legend>Register for GunnHacks</legend>
+								<div class="form-group">
+									<label for="inputName" class="col-sm-2 col-md-2 col-lg-2 control-label">Name</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<input type="text" class="form-control" id="inputName" placeholder="Josh Paley" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail" class="col-sm-2 col-md-2 col-lg-2 control-label">Email</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<input type="email" class="form-control" id="inputEmail" placeholder="you@example.com" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPhone" class="col-sm-2 col-md-2 col-lg-2 control-label">
+										Phone Number
+										<small>(Optional)</small>
+									</label>
+									<div class="col-sm-3 col-md-3 col-lg-3">
+										<input type="tel" class="form-control" id="inputPhone" data-mask="(999) 999-9999" placeholder="(555) 555-5555" pattern="^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$">
+									</div>
+									<label for="inputText" class="col-sm-6 col-md-6 col-lg-6 control-label">
+											I'd like to receive reminders and event information via text.
+											<br>
+											<small>Standard text messaging rates apply.</small>
+									</label>
+									<div class="togglebutton col-sm-1 col-md-1 col-lg-1">
+										<label>
+											<input type="checkbox" id="inputText">
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputSchool" class="col-sm-2 col-md-2 col-lg-2 control-label">School</label>
+									<div class="col-sm-10 col-md-10 col-lg-10" id="school">
+										<input type="text" class="form-control" id="inputSchool" placeholder="Hogwarts School of Witchcraft and Wizardry" required autocomplete="off">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputAge" class="col-sm-2 col-md-2 col-lg-2 control-label">Age</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<input type="number" max="20" min="10" class="form-control" id="inputAge" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">Grade</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="grade" id="radioFreshman" value="9" required>
+												9 - Freshman
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="grade" id="radioSophomore" value="10" required>
+												10 - Sophomore
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="grade" id="radioJunior" value="11" required>
+												11 - Junior
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="grade" id="radioSenior" value="12" required>
+												12 - Senior
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">Gender</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="gender" id="radioMale" value="Male" required>
+												Male
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="gender" id="radioFemale" value="Female" required>
+												Female
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="gender" id="radioOther" value="Other" required>
+												I don't identify with the choices above. I identify as <input type="text" class="form-control" id="genderOther" disabled>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">T-Shirt Size</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="shirt" id="radioExtraSmall" value="XS" required>
+												Extra Small (XS)
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="shirt" id="radioSmall" value="S" required>
+												Small (S)
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="shirt" id="radioMedium" value="M" required>
+												Medium (M)
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="shirt" id="radioLarge" value="L" required>
+												Large (L)
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="shirt" id="radioExtraLarge" value="XL" required>
+												Extra Large (XL)
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">Allergies/Dietary Restrictions</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="diet" id="radioNone" value="None" required>
+												None
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="diet" id="radioVegetarian" value="Vegetarian" required>
+												Vegetarian
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="diet" id="radioVegan" value="Vegan" required>
+												Vegan
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="diet" id="radioDietOther" value="Other" required>
+												Other <input type="text" class="form-control" id="dietOther" disabled>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputFirst" class="col-sm-2 col-md-2 col-lg-2 control-label">Hackathon Experience</label>
+									<label for="inputFirst" class="col-sm-2 col-md-2 col-lg-2 control-label question">
+										Is this your first hackathon?
+									</label>
+									<div class="togglebutton col-sm-1 col-md-1 col-lg-1">
+										<label>
+											<input type="checkbox" checked id="inputFirst">
+										</label>
+									</div>
+									<label for="inputHardware" class="col-sm-2 col-md-2 col-lg-2 control-label">Hardware Hack</label>
+									<label for="inputHardware" class="col-sm-4 col-md-4 col-lg-4 control-label question">
+										Are you planning on working on a hardware hack?
+									</label>
+									<div class="togglebutton col-sm-1 col-md-1 col-lg-1">
+										<label>
+											<input type="checkbox" id="inputHardware">
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputResume" class="col-sm-2 col-md-2 col-lg-2 control-label">
+										R&eacute;sum&eacute;
+										<small>(Optional)</small>
+									</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<input type="url" class="form-control" id="inputResume" placeholder="http://example.com/path/to/resume.pdf">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputWebsite" class="col-sm-2 col-md-2 col-lg-2 control-label">
+										Personal Website
+										<small>(Optional)</small>
+									</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<input type="text" class="form-control" id="inputWebsite" placeholder="http://kennoh.com">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputGitHub" class="col-sm-2 col-md-2 col-lg-2 control-label">
+										GitHub
+										<small>(Optional)</small>
+									</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<div class="input-group">
+											<span class="input-group-addon">https://www.github.com/</span>
+											<input type="text" class="form-control floating-label" id="inputGitHub" placeholder="username">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputLinkedIn" class="col-sm-2 col-md-2 col-lg-2 control-label">
+										LinkedIn
+										<small>(Optional)</small>
+									</label>
+									<div class="col-sm-10 col-md-10 col-lg-10">
+										<div class="input-group">
+											<span class="input-group-addon">https://www.linkedin.com/in/</span>
+											<input type="text" class="form-control floating-label" id="inputLinkedIn" placeholder="username">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputFriend" class="col-sm-2 col-md-2 col-lg-2 control-label">
+										Invite Friends
+										<small>(Optional)</small>
+									</label>
+									<div class="col-sm-3 col-md-3 col-lg-3 col-sm-3-3 col-md-3-3 col-lg-3-3">
+										<input type="email" class="form-control" id="inputFriend1" placeholder="alice@example.com">
+									</div>
+									<div class="col-sm-3 col-md-3 col-lg-3 col-sm-3-3 col-md-3-3 col-lg-3-3">
+										<input type="email" class="form-control" id="inputFriend2" placeholder="bob@example.com">
+									</div>
+									<div class="col-sm-3 col-md-3 col-lg-3 col-sm-3-3 col-md-3-3 col-lg-3-3">
+										<input type="email" class="form-control" id="inputFriend3" placeholder="eve@example.com">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+										<button class="btn btn-default" id="cancel">Cancel</button>
+										<button type="submit" class="btn btn-danger">Submit</button>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
 				</div>
 			</div>
 
@@ -346,8 +596,8 @@
 	<!-- Scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 	<script src="js/index.js"></script>
-	<script src="js/form.js"></script>
 	<script src="js/ripples.min.js"></script>
 	<script src="js/material.min.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
@@ -355,7 +605,8 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
 	<script src="js/pagetransitions.js"></script>
-	<script src="js/sweet-alert.min.js"></script>
+	<script src="js/form.js"></script>
+	<!-- <script src="js/sweet-alert.min.js"></script> -->
 	<script src="js/typeahead.js"></script>
 
 	<!-- Google Analytics -->

@@ -22,6 +22,10 @@ a, a:hover, a:active, a:focus {
 	position: inherit;
 }
 
+.pt-page-2 {
+	padding-top: 25px;
+}
+
 /* ---------- Sticky Footer ---------- */
 
 html, body {
@@ -73,6 +77,11 @@ footer {
 	border: none;
 }
 
+.navbar-nav {
+	visibility: hidden;
+	display: none;
+}
+
 @media (min-width: 768px) {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: 15px;
@@ -94,6 +103,7 @@ footer {
 /* ---------- About ---------- */
 
 #about {
+	background-color: #eee;
 	background-image:
 		linear-gradient(
 	      rgba(0, 0, 0, 0.75), 
@@ -224,44 +234,44 @@ footer {
 /* ---------- Contact form ---------- */
 
 .contact-form input[type="email"] ,.contact-form input[type="submit"] {
-	display:inline-block;
-	font-size:0.6em;
-	padding:0.8em;
-	outline:none;
-	border:none;
-	margin:0px;
+	display: inline-block;
+	font-size: 0.6em;
+	padding: 0.8em;
+	outline: none;
+	border: none;
+	margin: 0px;
 }
 
 .contact-form input[type="email"] {
-	-webkit-transition:all 0.5s ease-in-out;
-	transition:all 0.5s ease-in-out;
-	border:1px solid rgba(255, 255, 255, 0.8);
-	border-radius:3px 0px 0px 3px;
-	color:#5e6272;
-	width:72%;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 3px 0px 0px 3px;
+	color: #5e6272;
+	width: 72%;
 }
 
 .contact-form input[type="submit"] {
-	-webkit-transition:all 0.5s ease-in-out;
-	transition:all 0.5s ease-in-out;
-	border:1px solid rgba(255, 255, 255, 0.8);
-	background-color:transparent;
-	border-radius:0 3px 3px 0;
-	cursor:pointer;
-	color:white;
-	width:28%;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	background-color: transparent;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	color: white;
+	width: 28%;
 }
 
 .button {
 	-webkit-transition:all 0.1s ease-in-out;
-	transition:all 0.1s ease-in-out;
-	font-weight:normal;
-	display:inline-block;
-	border:1px solid #ffffff;
+	transition: all 0.1s ease-in-out;
+	font-weight: normal;
+	display: inline-block;
+	border: 1px solid #ffffff;
 	text-decoration:none;
 	border-radius:3px;
-	padding:12px 0.75em;
-	color:white;
+	padding: 12px 0.75em;
+	color: white;
 }
 
 .button:hover {
@@ -270,28 +280,37 @@ footer {
 }
 
 .button.nohover {
-	border:1px solid white;
-	background:transparent;
+	border: 1px solid white;
+	background: transparent;
 }
 
 .button+.button {
-	margin-left:12px;
+	margin-left: 12px;
+}
+
+.contact-form input[type="submit"] {
+	cursor: not-allowed;
 }
 
 .valid input[type="submit"] {
-	background-color:#2ecc71;
+	background-color: #2ecc71;
+	cursor: pointer;
 }
 
 .contact-form #signup.sent input[type="email"] {
-	width:0%;
-	padding:0.8em 0;
-	border:none;
+	width: 0%;
+	padding: 0.8em 0;
+	border: none;
 }
 
 .contact-form #signup.sent input[type="submit"] {
-	border-radius:3px;
-	cursor:auto;
-	width:40%;
+	border-radius: 3px;
+	cursor: auto;
+	width: 40%;
+}
+
+.email {
+	cursor: auto;
 }
 
 /* ---------- FAQ ---------- */
@@ -446,5 +465,54 @@ footer > div {
 @media (max-width: 477px) {
 	.copyright {
 		font-size: 2vw;
+	}
+}
+
+/* ---------- Registration Form ---------- */
+
+.input-group-addon {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.input-group .form-control-wrapper {
+	margin-left: 0px;
+}
+
+form small, label[for="inputText"], label.question {
+	font-weight: normal;
+}
+
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle {
+	background-color: rgba(244, 67, 54, 0.5);
+}
+.togglebutton label input[type=checkbox]:first-child:checked ~ .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(244, 67, 54, 0.1);
+}
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle:after {
+	background-color: #f44336;
+}
+
+.form-control-wrapper .form-control:focus ~ .material-input:after,
+.form-control-wrapper .form-control.focus ~ .material-input:after,
+.form-control-wrapper .material-input:before,
+.form-group .material-input:before,
+.form-group input.form-control:focus ~ .material-input:after {
+	background-color: #f44336 !important; /* default #009587 */
+}
+
+.form-group input.form-control:not(.empty) ~ .floating-label {
+	color: #555;
+}
+
+.input-group input:focus {
+	border-bottom-style: none !important;
+}
+
+@media (min-width: 768px) {
+	.col-sm-3-3, .col-md-3-3, .col-lg-3-3 {
+		width: 27.7777777777778%;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
