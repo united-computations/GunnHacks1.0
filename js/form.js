@@ -11,14 +11,16 @@ $( document ).ready(function(){
 
 			//$('input[type="submit"]').val('Thank you! ♥ We\'ll email ' + $('.email').val() + ' when registration opens.');
 
+			document.getElementById('inputName').focus();
+
 			// Uncomment to deploy registration
-			// $('#inputEmail').val( $('.email').val() );
-			// PageTransitions.nextPage( $('#submit') );
-			// document.getElementById('inputName').focus();
+			$('#inputEmail').val( $('.email').val() );
+			PageTransitions.nextPage( $('#submit') );
+			document.getElementById('inputName').focus();
 
 			// Comment out when enabling registration
-			$( '#signup' ).addClass('sent');
-			$('input[type="submit"]').val('Thank you! ♥');
+			// $( '#signup' ).addClass('sent');
+			// $('input[type="submit"]').val('Thank you! ♥');
 
 		}
 		return false;
@@ -37,23 +39,23 @@ $( document ).ready(function(){
 				"entry.1703554458": $('#inputText').val(),
 				"entry.252876870": $('#inputSchool').val(),
 				"entry.51384848": $('#inputAge').val(),
-				"entry.1195499678": $('#radioFreshman').val(),
-				"entry.1265397744": $('#radioSophomore').val(),
-				"entry.1569566681": $('#radioJunior').val(),
-				"entry.483327531": $('#radioSenior').val(),
-				"entry.984089881": $('#radioMale').val(),
-				"entry.1986352261": $('#radioFemale').val(),
-				"entry.1588954907": $('#radioOther').val(),
+				"entry.1195499678": $('#radioFreshman').is(':checked'),
+				"entry.1265397744": $('#radioSophomore').is(':checked'),
+				"entry.1569566681": $('#radioJunior').is(':checked'),
+				"entry.483327531": $('#radioSenior').is(':checked'),
+				"entry.984089881": $('#radioMale').is(':checked'),
+				"entry.1986352261": $('#radioFemale').is(':checked'),
+				"entry.1588954907": $('#radioOther').is(':checked'),
 				"entry.2125284338": $('#genderOther').val(),
-				"entry.2089511535": $('#radioExtraSmall').val(),
-				"entry.1824583845": $('#radioSmall').val(),
-				"entry.1470106745": $('#radioMedium').val(),
-				"entry.41123227": $('#radioLarge').val(),
-				"entry.1532256680": $('#radioExtraLarge').val(),
-				"entry.1048428711": $('#radioNone').val(),
-				"entry.1370720311": $('#radioVegetarian').val(),
-				"entry.102106713": $('#radioVegan').val(),
-				"entry.2122108574": $('#radioDietOther').val(),
+				"entry.2089511535": $('#radioExtraSmall').is(':checked'),
+				"entry.1824583845": $('#radioSmall').is(':checked'),
+				"entry.1470106745": $('#radioMedium').is(':checked'),
+				"entry.41123227": $('#radioLarge').is(':checked'),
+				"entry.1532256680": $('#radioExtraLarge').is(':checked'),
+				"entry.1048428711": $('#radioNone').is(':checked'),
+				"entry.1370720311": $('#radioVegetarian').is(':checked'),
+				"entry.102106713": $('#radioVegan').is(':checked'),
+				"entry.2122108574": $('#radioDietOther').is(':checked'),
 				"entry.696923945": $('#dietOther').val(),
 				"entry.551301075": $('#inputFirst').val(),
 				"entry.286314095": $('#inputHardware').val(),
@@ -71,7 +73,6 @@ $( document ).ready(function(){
 
 		$('input[type="submit"]').val('Thank you! ♥');
 		PageTransitions.nextPage( $('#submit') );
-		document.getElementById('inputName').focus();
 		return false;
 	});
 

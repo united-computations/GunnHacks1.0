@@ -40,6 +40,8 @@ var PageTransitions = (function() {
 	}
 
 	function nextPage( options ) {
+		window.scrollTo(0, 0);
+
 		var animation = (options.animation) ? options.animation : options;
 
 		if( isAnimating ) {
@@ -98,8 +100,6 @@ var PageTransitions = (function() {
 		}
 
 		$('.navbar-nav').toggleClass( 'pt-page-current' );
-
-		window.scrollTo(0, 0);
 	}
 
 	function onEndAnimation( $outpage, $inpage ) {

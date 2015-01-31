@@ -159,7 +159,7 @@ footer {
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 768px) {
 	#title > h1 {
 		font-size: 14vw;
 	}
@@ -167,6 +167,15 @@ footer {
 		font-size: 6vw;
 	}
 }
+
+/*@media (max-width: 380px) {
+	#title > h1 {
+		font-size: 14vw;
+	}
+	.contact-form {
+		font-size: 6vw;
+	}
+}*/
 
 #about-title {
 	margin: 0;
