@@ -17,6 +17,7 @@ $( document ).ready(function(){
 			$('#inputEmail').val( $('.email').val() );
 			PageTransitions.nextPage( $('#submit') );
 			document.getElementById('inputName').focus();
+			window.scrollTo(0, 0);
 
 			// Comment out when enabling registration
 			// $( '#signup' ).addClass('sent');
@@ -73,11 +74,13 @@ $( document ).ready(function(){
 
 		$('input[type="submit"]').val('Thank you! ♥');
 		PageTransitions.nextPage( $('#submit') );
+		window.scrollTo(0, 0);
 		return false;
 	});
 
 	$('#cancel').click(function(){
 		PageTransitions.nextPage( $('#submit') );
+		window.scrollTo(0, 0);
 		return false;
 	});
 });
