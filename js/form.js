@@ -30,6 +30,30 @@ $( document ).ready(function(){
 	$('#registration').submit(function(){
 		$( '#signup' ).addClass('sent');
 
+		var grade = "";
+		if ($('#radioFreshman').is(':checked')) grade = "9";
+		else if ($('#radioSophomore').is(':checked')) grade = "10";
+		else if ($('#radioJunior').is(':checked')) grade = "11";
+		else if ($('#radioSenior').is(':checked')) grade = "12";
+
+		var gender = "";
+		if ($('#radioMale').is(':checked')) gender = "Male";
+		else if ($('#radioFemale').is(':checked')) gender = "Female";
+		else if ($('#radioOther').is(':checked')) gender = $('#genderOther').val();
+
+		var shirt = "";
+		if ($('#radioExtraSmall').is(':checked')) shirt = "XS";
+		else if ($('#radioSmall').is(':checked')) shirt = "S";
+		else if ($('#radioMedium').is(':checked')) shirt = "M";
+		else if ($('#radioLarge').is(':checked')) shirt = "L";
+		else if ($('#radioExtraLarge').is(':checked')) shirt = "XL";
+
+		var diet = "";
+		if ($('#radioNone').is(':checked')) diet = "None";
+		else if ($('#radioVegetarian').is(':checked')) diet = "Vegetarian";
+		else if ($('#radioVegan').is(':checked')) diet = "Vegan";
+		else if ($('#radioDietOther').is(':checked')) diet = $('#dietOther').val();
+
 		$.ajax({
 			url: "https://docs.google.com/forms/d/1gw8CcNFUIQPnYtsiuIMFNYMpc4zwPCB5dfk4vXKei70/formResponse", 
 			method: "POST",
@@ -40,24 +64,10 @@ $( document ).ready(function(){
 				"entry.1703554458": $('#inputText').val(),
 				"entry.252876870": $('#inputSchool').val(),
 				"entry.51384848": $('#inputAge').val(),
-				"entry.1195499678": $('#radioFreshman').is(':checked'),
-				"entry.1265397744": $('#radioSophomore').is(':checked'),
-				"entry.1569566681": $('#radioJunior').is(':checked'),
-				"entry.483327531": $('#radioSenior').is(':checked'),
-				"entry.984089881": $('#radioMale').is(':checked'),
-				"entry.1986352261": $('#radioFemale').is(':checked'),
-				"entry.1588954907": $('#radioOther').is(':checked'),
-				"entry.2125284338": $('#genderOther').val(),
-				"entry.2089511535": $('#radioExtraSmall').is(':checked'),
-				"entry.1824583845": $('#radioSmall').is(':checked'),
-				"entry.1470106745": $('#radioMedium').is(':checked'),
-				"entry.41123227": $('#radioLarge').is(':checked'),
-				"entry.1532256680": $('#radioExtraLarge').is(':checked'),
-				"entry.1048428711": $('#radioNone').is(':checked'),
-				"entry.1370720311": $('#radioVegetarian').is(':checked'),
-				"entry.102106713": $('#radioVegan').is(':checked'),
-				"entry.2122108574": $('#radioDietOther').is(':checked'),
-				"entry.696923945": $('#dietOther').val(),
+				"entry.1195499678": grade,
+				"entry.984089881": gender,
+				"entry.2089511535": shirt,
+				"entry.1048428711": diet,
 				"entry.551301075": $('#inputFirst').val(),
 				"entry.286314095": $('#inputHardware').val(),
 				"entry.1067756311": $('#inputResume').val(),
