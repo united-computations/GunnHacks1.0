@@ -6,8 +6,7 @@ $( document ).ready(function(){
 				method: "POST",
 				data: {"entry.1190056938": $('.email').val()},
 				dataType: "xml"
-			}).done(function( data ) {
-				});
+			}).done(function( data ) { });
 
 			//$('input[type="submit"]').val('Thank you! ♥ We\'ll email ' + $('.email').val() + ' when registration opens.');
 
@@ -79,8 +78,7 @@ $( document ).ready(function(){
 				"entry.2097407123": $('#inputFriend3').val()
 			},
 			dataType: "xml"
-		}).done(function( data ) {
-			});
+		}).done(function( data ) { });
 
 		$('input[type="submit"]').val('Thank you! ♥');
 		PageTransitions.nextPage( $('#submit') );
