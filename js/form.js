@@ -54,11 +54,12 @@ $( document ).ready(function(){
 		else if ($('#radioVegan').is(':checked')) diet = "Vegan";
 		else if ($('#radioDietOther').is(':checked')) diet = $('#dietOther').val();
 
-		var first = "No";
-		if ($('#firstYes').is(':checked')) first = "Yes";
+		var first = $('#firstYes').is(':checked') ? "Yes" : "No";
+		var hardware = $('#hardwareYes').is(':checked') ? "Yes" : "No";
 
-		var hardware = "No";
-		if ($('#hardwareYes').is(':checked')) hardware = "Yes";
+		var friend1 = ($('#inputFriend1').val() == "") ? "null" : $('#inputFriend1').val();
+		var friend2 = ($('#inputFriend2').val() == "") ? "null" : $('#inputFriend2').val();
+		var friend3 = ($('#inputFriend3').val() == "") ? "null" : $('#inputFriend3').val();
 
 		$.ajax({
 			url: "https://docs.google.com/forms/d/1gw8CcNFUIQPnYtsiuIMFNYMpc4zwPCB5dfk4vXKei70/formResponse", 

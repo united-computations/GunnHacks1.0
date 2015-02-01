@@ -361,6 +361,10 @@ footer {
     font-weight: normal;
 }
 
+.panel-group {
+	margin-bottom: 0;
+}
+
 /* ---------- Sponsors ---------- */
 
 .sponsor_logo {
