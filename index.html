@@ -397,27 +397,30 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-2 col-md-2 col-lg-2 control-label">
-										Gender
-										<small>(Optional)</small>
-									</label>
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">Gender</label>
 									<div class="col-sm-10 col-md-10 col-lg-10">
 										<div class="radio radio-danger">
 											<label>
-												<input type="radio" name="gender" id="radioMale" value="Male">
+												<input type="radio" name="gender" id="radioMale" value="Male" required>
 												Male
 											</label>
 										</div>
 										<div class="radio radio-danger">
 											<label>
-												<input type="radio" name="gender" id="radioFemale" value="Female">
+												<input type="radio" name="gender" id="radioFemale" value="Female" required>
 												Female
 											</label>
 										</div>
 										<div class="radio radio-danger">
 											<label>
-												<input type="radio" name="gender" id="radioOther" value="Other">
+												<input type="radio" name="gender" id="radioOther" value="Other" required>
 												I don't identify with the choices above. I identify as <input type="text" class="form-control" id="genderOther" disabled>
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="gender" id="radioDecline" value="Decline to State" required>
+												I'd prefer not to say
 											</label>
 										</div>
 									</div>
@@ -487,23 +490,41 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputFirst" class="col-sm-2 col-md-2 col-lg-2 control-label">Hackathon Experience</label>
-									<label for="inputFirst" class="col-sm-2 col-md-2 col-lg-2 control-label question">
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">Hackathon Experience</label>
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label question">
 										Is this your first hackathon?
 									</label>
-									<div class="togglebutton col-sm-1 col-md-1 col-lg-1">
-										<label>
-											<input type="checkbox" checked id="inputFirst">
-										</label>
+									<div class="col-sm-1">
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="first" id="firstYes" value="Yes" required>
+												Yes
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="first" id="firstNo" value="No" required>
+												No
+											</label>
+										</div>
 									</div>
-									<label for="inputHardware" class="col-sm-2 col-md-2 col-lg-2 control-label">Hardware Hack</label>
-									<label for="inputHardware" class="col-sm-4 col-md-4 col-lg-4 control-label question">
+									<label class="col-sm-2 col-md-2 col-lg-2 control-label">Hardware Hack</label>
+									<label class="col-sm-3 control-label question">
 										Are you planning on working on a hardware hack?
 									</label>
-									<div class="togglebutton col-sm-1 col-md-1 col-lg-1">
-										<label>
-											<input type="checkbox" id="inputHardware">
-										</label>
+									<div class="col-sm-1">
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="hardware" id="hardwareYes" value="Yes" required>
+												Yes
+											</label>
+										</div>
+										<div class="radio radio-danger">
+											<label>
+												<input type="radio" name="hardware" id="hardwareNo" value="No" required>
+												No
+											</label>
+										</div>
 									</div>
 								</div>
 								<div class="form-group">

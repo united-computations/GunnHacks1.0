@@ -738,7 +738,7 @@
         var css = {
             wrapper: {
                 position: "relative",
-                display: "inline-block"
+                // display: "inline-block"
             },
             hint: {
                 position: "absolute",
@@ -761,8 +761,10 @@
                 position: "absolute",
                 top: "100%",
                 left: "0",
+                right: "0",
                 zIndex: "100",
-                display: "none"
+                display: "none",
+                backgroundColor: "white"
             },
             suggestions: {
                 display: "block"

@@ -39,6 +39,7 @@ $( document ).ready(function(){
 		if ($('#radioMale').is(':checked')) gender = "Male";
 		else if ($('#radioFemale').is(':checked')) gender = "Female";
 		else if ($('#radioOther').is(':checked')) gender = $('#genderOther').val();
+		else if ($('#radioDecline').is(':checked')) gender = "Decline to State";
 
 		var shirt = "";
 		if ($('#radioExtraSmall').is(':checked')) shirt = "XS";
@@ -52,6 +53,12 @@ $( document ).ready(function(){
 		else if ($('#radioVegetarian').is(':checked')) diet = "Vegetarian";
 		else if ($('#radioVegan').is(':checked')) diet = "Vegan";
 		else if ($('#radioDietOther').is(':checked')) diet = $('#dietOther').val();
+
+		var first = "No";
+		if ($('#firstYes').is(':checked')) first = "Yes";
+
+		var hardware = "No";
+		if ($('#hardwareYes').is(':checked')) hardware = "Yes";
 
 		$.ajax({
 			url: "https://docs.google.com/forms/d/1gw8CcNFUIQPnYtsiuIMFNYMpc4zwPCB5dfk4vXKei70/formResponse", 
@@ -67,8 +74,8 @@ $( document ).ready(function(){
 				"entry.984089881": gender,
 				"entry.2089511535": shirt,
 				"entry.1048428711": diet,
-				"entry.551301075": $('#inputFirst').is(':checked'),
-				"entry.286314095": $('#inputHardware').is(':checked'),
+				"entry.551301075": first,
+				"entry.286314095": hardware,
 				"entry.1067756311": $('#inputResume').val(),
 				"entry.855370543": $('#inputWebsite').val(),
 				"entry.1235285041": $('#inputGitHub').val(),

@@ -17,6 +17,7 @@ function setContainerWidth() {
 }
 
 $(document).ready(function() {
+	window.scrollTo(0, 0);
 	$.material.init();
 	smoothScroll.init();
 	$('.tooltip').tooltipster({
@@ -51,7 +52,8 @@ $(document).ready(function() {
 	$('#school #inputSchool').typeahead({
 		hint: true,
 		highlight: true,
-		minLength: 1
+		minLength: 2,
+		// limit: 5
 	},
 	{
 		name: 'schools',

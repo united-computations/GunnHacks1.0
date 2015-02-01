@@ -519,9 +519,9 @@ form small, label[for="inputText"], label.question {
 }
 
 @media (min-width: 768px) {
-	.col-sm-3-3, .col-md-3-3, .col-lg-3-3 {
-		width: 27.7777777777778%;
+	.col-sm-3-3 {
+		width: 27.77777778%;
 		padding-left: 20px;
 		padding-right: 20px;
-	}
+	}	
 }
