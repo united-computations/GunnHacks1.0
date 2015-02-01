@@ -81,9 +81,9 @@ $( document ).ready(function(){
 				"entry.855370543": $('#inputWebsite').val(),
 				"entry.1235285041": $('#inputGitHub').val(),
 				"entry.1957040337": $('#inputLinkedIn').val(),
-				"entry.1561818636": $('#inputFriend1').val(),
-				"entry.1546163091": $('#inputFriend2').val(),
-				"entry.2097407123": $('#inputFriend3').val()
+				"entry.1561818636": friend1,
+				"entry.1546163091": friend2,
+				"entry.2097407123": friend3
 			},
 			dataType: "xml"
 		}).done(function( data ) { });
