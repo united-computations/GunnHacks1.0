@@ -323,7 +323,9 @@ footer {
 }
 
 /* ---------- FAQ ---------- */
-
+#faq-content {
+	padding-top: 20px;
+}
 .nav-tabs li a:focus,
 .panel-heading a:focus {
     outline: none;
