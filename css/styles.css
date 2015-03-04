@@ -407,19 +407,12 @@ th.event {
 
 /* ---------- Sponsors ---------- */
 
-.sponsor_logo {
-	line-height: 0;
-	padding: 20px 0px;
-	text-align: center;
-}
+#sponsor_logo {
+	margin-top:40px;
+	margin-bottom: 80px;
+	max-width:300px;
 
-.sponsor_logo img {
-	max-width: 500px;
-	width: 50%;
-	display: inline-block;
-	margin: 30px 10px;
 }
-
 .hard-sponsor {
 	border: 2px solid #FFB03B;
 }
@@ -460,6 +453,9 @@ th.event {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
+	font-size:1.3em;
+
 }
 
 #sponsor-link {
