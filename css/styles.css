@@ -77,11 +77,6 @@ footer {
 	border: none;
 }
 
-.navbar-nav {
-	visibility: hidden;
-	display: none;
-}
-
 @media (min-width: 768px) {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: 15px;
@@ -265,7 +260,7 @@ footer {
 	transition: all 0.5s ease-in-out;
 	border: 1px solid rgba(255, 255, 255, 0.8);
 	background-color: transparent;
-	border-radius: 0 3px 3px 0;
+	border-radius: 3px 3px 3px 3px;
 	cursor: pointer;
 	color: white;
 	/*width: 28%;*/
@@ -322,10 +317,49 @@ footer {
 	cursor: auto;
 }
 
+/* ---------- Schedule ---------- */
+
+#schedule-content {
+	padding-top: 20px;
+}
+
+#schedule h4 {
+	font-weight: 300;
+	font-size: 2.25em;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0;
+	table-layout: fixed;
+	width: 100%;
+	text-align: center;
+	font-size: 1.25em;
+	word-wrap: break-word;
+}
+
+th, td {
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th.time {
+	width: 30%;
+}
+
+th.event {
+	width: 70%;
+}
+
 /* ---------- FAQ ---------- */
 #faq-content {
 	padding-top: 20px;
 }
+
 .nav-tabs li a:focus,
 .panel-heading a:focus {
     outline: none;
