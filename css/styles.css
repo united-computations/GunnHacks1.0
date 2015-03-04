@@ -26,6 +26,10 @@ a, a:hover, a:active, a:focus {
 	padding-top: 25px;
 }
 
+table {
+	border: none;
+}
+
 /* ---------- Sticky Footer ---------- */
 
 html, body {
@@ -331,13 +335,13 @@ footer {
 }
 
 table, th, td {
-	border: 1px solid black;
+
+	border: none;
 	border-collapse: collapse;
 	margin: 0;
 	table-layout: fixed;
 	width: 100%;
-	text-align: center;
-	font-size: 1.25em;
+	font-size: 1em;
 	word-wrap: break-word;
 }
 
