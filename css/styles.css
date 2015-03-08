@@ -22,10 +22,6 @@ a, a:hover, a:active, a:focus {
 	position: inherit;
 }
 
-.pt-page-2 {
-	padding-top: 25px;
-}
-
 table {
 	border: none;
 }
@@ -323,25 +319,24 @@ footer {
 
 /* ---------- Schedule ---------- */
 
-#schedule-content {
+#schedule {
 	padding-top: 20px;
 }
 
-#schedule h4 {
+#schedule h2 {
 	font-weight: 300;
-	font-size: 2.25em;
+	font-size: 4em;
 	text-align: center;
 	padding-bottom: 20px;
 }
 
 table, th, td {
-
 	border: none;
 	border-collapse: collapse;
 	margin: 0;
 	table-layout: fixed;
 	width: 100%;
-	font-size: 1em;
+	font-size: 1.2em;
 	word-wrap: break-word;
 }
 
@@ -357,6 +352,10 @@ th.time {
 
 th.event {
 	width: 70%;
+}
+
+#saturday {
+	margin-top: -25px;
 }
 
 /* ---------- FAQ ---------- */
@@ -407,59 +406,39 @@ th.event {
 
 /* ---------- Sponsors ---------- */
 
-#sponsor_logo {
-	margin-top:40px;
-	margin-bottom: 80px;
-	max-width:300px;
-
-}
-.hard-sponsor {
-	border: 2px solid #FFB03B;
-}
-
 .tier1 a, .tier2 a, .tier3 a, .tier4 a, .tier5 a {
-	display: block;
+	/*display: block;*/
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.tier1 a {
 	max-width: 200px;
 	width: 43%;
 }
 
-.tier2 a {
-	max-width: 280px;
-	width: 28%;
-}
-
-.tier3 a {
-	max-width: 210px;
-	width: 20%;
-}
-
-.tier4 a {
-	max-width: 210px;
-	width: 20%;
-}
-
-.tier5 a {
-	max-width: 210px;
-	width: 20%;
-}
-
-#sponsor-call-to-action {
-	max-width: 750px;
+#gunn-cs-img {
+	max-width: 150px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	font-size:1.3em;
+}
+
+#a16z-img {
+	max-width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 
 }
 
 #sponsor-link {
 	text-align: center;
+}
+
+#sponsor-lead-in {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 /* ---------- Footer ---------- */
