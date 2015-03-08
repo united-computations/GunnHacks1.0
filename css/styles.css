@@ -406,8 +406,8 @@ th.event {
 
 /* ---------- Sponsors ---------- */
 
-.tier1 a, .tier2 a, .tier3 a, .tier4 a, .tier5 a {
-	/*display: block;*/
+.tier1 a {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 200px;
@@ -415,20 +415,17 @@ th.event {
 }
 
 #gunn-cs-img {
-	max-width: 150px;
+	max-width: 100px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	text-align: center;
 }
 
 #a16z-img {
-	max-width: 200px;
+	max-width: 175px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	text-align: center;
-
 }
 
 #sponsor-link {
