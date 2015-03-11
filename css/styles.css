@@ -325,18 +325,17 @@ footer {
 
 #schedule h2 {
 	font-weight: 300;
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
 	padding-bottom: 20px;
 }
 
 table, th, td {
-	border: 1px solid black!important;
 	border-collapse: collapse;
 	margin: 0;
 	table-layout: fixed;
 	width: 100%;
-	font-size: 1.2em;
+	font-size: 1em;
 	word-wrap: break-word;
 }
 
@@ -362,6 +361,7 @@ th.event {
 
 #saturday {
 	margin-top: -25px;
+
 }
 
 /* ---------- FAQ ---------- */
