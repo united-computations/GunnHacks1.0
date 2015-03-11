@@ -420,6 +420,11 @@ th.event {
 	width: 90%;
 }
 
+.tier1 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 #gunn-cs-img {
 	width: 90%;
 	max-width: 100px;
