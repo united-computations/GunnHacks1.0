@@ -441,6 +441,14 @@ th.event {
 	text-align: center;
 }
 
+#makeschool-img {
+	width: 75%;
+	max-width: 100px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #sponsor-link {
 	text-align: center;
 }
