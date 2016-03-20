@@ -2,4 +2,4 @@ GunnHacks
 =========
 Website for Gunn's inaugural hackathon.
 
-Check it out at <http://2015s.gunnhacks.com>.
+Check it out at <https://2015.gunnhacks.com>.
